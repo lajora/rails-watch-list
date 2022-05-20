@@ -6,7 +6,7 @@
   <li class="list-group-item"><%= bookmark.movie.poster_url %></li>
   <li class="list-group-item"><%= bookmark.comment %></li>
   <li class="list-group-item"><%= link_to "Remove",
-                  list_bookmark_path(@bookmark),
+                  bookmark_path(bookmark),
                   method: :delete,
                   data: { confirm: "Are you sure?" } %></li>
 </ul>
