@@ -1,6 +1,9 @@
 <br><br><br><br>
 <h1>Your Watch Lists</h1>
 
+<%= cl_image_tag("r97b9tzysoglulrtfrwu",
+      width: 400, height: 300, crop: :fill) %>
+
 <ul class="list-group">
   <% @lists.each do |list| %></h1>
     <li class="list-group-item"><h2><%=link_to list.name, list_path(list)%></h2></li>
